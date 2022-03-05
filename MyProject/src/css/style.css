@@ -1,0 +1,150 @@
+body {
+    font-family: Arial, sans-serif;
+}
+nav {
+    width: 100%;
+    height: 60px;
+    background: #344051;
+}
+.logo {
+    color: #fff;
+    font-size: 28px;
+    line-height: 60px;
+    padding-left: 218px;
+    float: left;
+}
+.menu {
+    float: left;
+    padding-left: 80px;
+}
+.menu li{
+    float: left;
+    line-height: 60px;
+    color: #fff;
+    margin-right: 40px;
+    font-size: 16px;
+    text-transform: uppercase;
+    
+}
+.main {
+    width: 100%;
+    height: calc(100% - 60px);
+    background: url(../img/boy.png) 90% 100%/auto 85% no-repeat , url(../img/bg.jpg) center/cover no-repeat;
+}
+.title__container{
+    float: left;
+    margin: 366px 0px 0px 114px;
+    color: #2c384a;
+    text-align: center
+}
+.title__container h1{
+    font-size: 62px;
+    font-weight: bold;
+}
+.title__container h4{
+    margin-top: 40px;
+    color: #79818d;
+    font-size: 18px;
+}
+.title__container input{
+    height: 40px;
+    text-align: center;
+    width: 98px;
+    border: 2px solid #6d7682;
+    background: none;
+    border-radius: 5px;
+    color: #6d7682;
+    font-size: 13px;
+    padding: 0px 16px 0px 16px;
+    margin: 63px 14px 0px 14px;
+}
+.inform{
+    width: 100%;
+    height: 717px;
+    background: url(../img/line.jpg) 50% 25%/auto no-repeat , url(../img/photo.png) 50% 47%/auto no-repeat , url(../img/white.png) center/cover no-repeat;
+}
+.inform h2{
+    font-size: 30px;
+    text-align: center;
+    padding-top: 109px;
+    padding-bottom: 128px;
+    color: #263244;
+}
+.text{
+    font-size: 15px;
+    color: #3f495a;
+    margin: 200px 120px 0px 120px;
+    text-align: justify
+}
+.p1{
+    padding-bottom: 42px;
+}
+.p2{
+    padding-bottom: 37px;
+}
+.inform input{
+    height: 35px;
+    width: 156px;
+    text-align: justify-all;
+    border: 2px solid #6f707e;
+    background: none;
+    border-radius: 5px;
+    margin-left: calc(50% - 80px);
+    color: #7b7c88;
+    background: url(../img/icon.png) 6% 50%/auto no-repeat;
+}
+.works{
+    width: 100%;
+    height: 525px;
+    background: url(../img/line.jpg) 50% 33%/auto no-repeat , url(../img/nout.png) 12% 274px/auto no-repeat , url(../img/sign.png) 38% 274px/auto no-repeat , url(../img/rocket.png) 63% 274px/auto no-repeat , url(../img/dinamik.png) 88% 274px/auto no-repeat , url(../img/casebg.jpg) center/cover no-repeat;
+     
+}
+.works h2{
+    font-size: 30px;
+    text-align: center;
+    padding-top: 109px;
+    padding-bottom: 128px;
+    color: #263244;
+}
+.works li{
+    float: left;
+    text-align: center;
+    padding-top: 78px;
+    margin-right: 40px ;
+    margin-left: 60px;
+    color: #3f495a
+}
+.works h3{
+    color: #cf7600;
+    font-weight: bold;
+}
+.cases{
+    width: 100%;
+    height: 1158px;
+    background: url(../img/line.jpg) 50% 165px/auto no-repeat, url(../img/site.jpg) center/auto no-repeat;
+}
+.cases h2{
+    font-size: 30px;
+    text-align: center;
+    padding-top: 109px;
+    padding-bottom: 72px;
+    color: #263244;
+}
+.descrip{
+    text-align: center;
+    font-size: 15px;
+    color: #3f495a;
+}
+.data{
+    margin-top: 672px;
+    margin-left: 30px;
+}
+.data h3{
+    font-weight: bold;
+    color: #384354;
+    margin: 6px 0px;
+}
+.project{
+    
+}
+
