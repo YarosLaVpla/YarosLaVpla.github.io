@@ -154,7 +154,176 @@ nav {
     color: #3f495a;
 }
 .cases input{
-    margin: 801px 0px 0px 0px;
     border: 2px solid #6d7682;
     background: none;
+    display: block;
+    margin-top: 23px;
+    padding: 9px 42px;
+    border-radius: 6px;
+    background: #63b5ae;
+    color: #ffffff;
 }
+
+.price{
+    width: 100%;
+    height: 690px;
+    background: url(../img/greyline.jpg) 50% 63%/auto no-repeat
+}
+.price h2{
+    font-size: 30px;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 72px;
+    font-weight: bold;
+    color: #1c2534;
+}
+.price h3{
+    font-size: 22px;
+    margin-left: 166px;
+    font-weight: 700;
+    color: #1c2534;
+}
+.price select{
+    padding: 15px 380px;
+    margin: 19px 0px 40px 166px;
+    background: #eeeeee;
+    text-align: left;
+    color: #737373;
+}
+.begin{
+    padding: 12px 0px 0px 166px;
+    font-weight: 800;
+    display: block;
+}
+.statis{
+    width: 100%;
+    height: 498px;
+    background:  
+        url(../img/cube.png) 89% 55%/auto no-repeat ,
+        url(../img/gal.png) 63% 55%/auto no-repeat ,       
+        url(../img/sign2.png) 38% 55%/auto no-repeat ,
+        url(../img/smile.png) 13% 55%/auto no-repeat ,
+        url(../img/line.png) 50% 32%/auto no-repeat ,
+        url(../img/statis.jpg) center/cover no-repeat;
+}
+.statis h2{
+    font-size: 30px;
+    text-align: center;
+    padding-top: 96px;
+    padding-bottom: 128px;
+    font-weight: 700;
+    color: #323e4f;
+}
+.statis li{
+    float: left;
+    text-align: center;
+    margin: 80px 70px 0px 80px;
+    padding-bottom: 20px;
+    font-weight: 600;
+    color: #323e4f;
+}
+.statis h3{
+    font-weight: bold;
+    font-size: 25px;
+    color: #323e4f;
+}
+.reviews{
+    width: 100%;
+    height: 598px;
+    background: 
+        url(../img/dot.png) 50% 90%/auto no-repeat ,
+        url(../img/ordot.png) 48% 90%/auto no-repeat ,
+        url(../img/dot.png) 52% 90%/auto no-repeat ,
+        url(../img/misha.png) center/auto no-repeat ,
+        url(../img/line.jpg) 50% 26%/auto no-repeat ;
+}
+.reviews h2{
+    font-size: 30px;
+    text-align: center;
+    padding-top: 96px;
+    padding-bottom: 128px;
+    font-weight: 700;
+    color: #243042;
+}
+.comm{
+    text-align: center;
+    margin-top: 130px;
+    line-height: 20px;
+    color: #243042;
+}
+.misha{
+    text-align: center;
+    margin-top: 40px;
+    color: #243042;
+}
+.contacts{
+    width: 100%;
+    height: 809px;
+    background:
+        url(../img/geo.png) 21% 35%/auto no-repeat , 
+        url(../img/letter.png) 50% 35%/auto no-repeat , 
+        url(../img/phone.png) 79% 35%/auto no-repeat , 
+        url(../img/line.png) 50% 20%/auto no-repeat , 
+        url(../img/contact.jpg) center/cover no-repeat;
+    color: #fff;
+}
+.contacts h2{
+    color: #ffffff;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 96px;
+    padding-bottom: 80px;
+    font-weight: 700;
+}
+.Im{
+    text-align: center;
+    font-size: 15px;
+}
+.contacts li{
+    float: left;
+    margin-top: 85px;
+    text-align: center;
+    padding-left: 200px;
+    padding-right: 10px;
+    line-height: 20px;
+}
+.contacts h3{
+    margin-top: 170px;
+    font-size: 25px;
+    text-align: center;
+    letter-spacing: 0,5px;
+    font-weight: 600;
+}
+.contacts input{
+    margin-top: 50px;
+   padding: 10px 270px 10px 0px;
+    background: #fff ;
+    margin-right: 35px;
+}
+.name{
+    margin-left: 150px;
+}
+.contacts textarea{
+    margin: 10px 0px 0px 150px;
+    height: 80px;
+} 
+.Here{
+    width: 100%;
+    height: 351px;
+    background: url(../img/map1.jpg) center/cover no-repeat;
+}
+.ending{
+    width: 100%;
+    height: 96px;
+    background: #344051;
+}
+.Copyr{
+    color: #fff;
+    text-align: center;
+    line-height: 96px;
+    letter-spacing: 0,5px;
+}
+
+
+
+
