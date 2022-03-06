@@ -135,16 +135,26 @@ nav {
     font-size: 15px;
     color: #3f495a;
 }
-.data{
-    margin-top: 672px;
-    margin-left: 30px;
+.we{
+    float: left;
+}
+.re{
+    float: left;
+}
+.data li{
+    margin: 673px 70px 0px 30px;
 }
 .data h3{
     font-weight: bold;
+    margin-bottom: 12px;
+    margin-top: 10px;
     color: #384354;
-    margin: 6px 0px;
 }
-.project{
-    
+.data{
+    color: #3f495a;
 }
-
+.cases input{
+    margin: 801px 0px 0px 0px;
+    border: 2px solid #6d7682;
+    background: none;
+}
