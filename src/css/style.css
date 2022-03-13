@@ -1,3 +1,33 @@
+.preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  background: #fff;
+  z-index: 1001;
+}
+
+.preloader__image {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  width: 64px;
+  height: 64px;
+  margin-top: -32px;
+  margin-left: -32px;
+  background: url('https://icons8.com/preloaders/preloaders/23/%D0%A1%D0%BF%D0%B0%D1%81%D0%B0%D1%8E%D1%89%D0%B8%D0%B9%D1%81%D1%8F%20%D0%BC%D1%8F%D1%87.gif') no-repeat 50% 50%; /*расположение (url) изображения gif и др. параметры*/
+}
+
+.loaded_hiding .preloader {
+  transition: 0.3s opacity;
+  opacity: 0;
+}
+
+.loaded .preloader {
+  display: none;
+}
 body {
     font-family: Arial, sans-serif;
 }
@@ -5,6 +35,8 @@ nav {
     width: 100%;
     height: 60px;
     background: #344051;
+    position: fixed;
+    z-index: 4;
 }
 .logo {
     color: #fff;
@@ -12,6 +44,9 @@ nav {
     line-height: 60px;
     padding-left: 218px;
     float: left;
+    -webkit-animation: comming 2s ease;
+    -o-animation: comming 2s ease;
+    animation: comming 2s ease;
 }
 .menu {
     float: left;
@@ -24,18 +59,61 @@ nav {
     margin-right: 40px;
     font-size: 16px;
     text-transform: uppercase;
-    
+     -webkit-animation: topshift 0.4s ease forwards;
+    -o-animation: topshift 0.4s ease forwards;
+    animation: topshift 0.4s ease forwards;
+    opacity: 0;
+}
+.menu li a{
+    transition: all 0.3s;
+    color: white;
+    transform: scale(1);
+    display: block;
+    -webkit-animation: topshift;
+    -o-animation: ;
+    animation: ;
+}
+.menu li a:visited{
+    color: white;
+}
+.menu li a:hover{
+    color: #e88604;
+}
+.menu li a:active{
+    transform: scale(1.2);
+}
+.menu li:nth-child(2){
+    animation-delay: 0.8s;
+}
+.menu li:nth-child(3){
+    animation-delay: 1.2s;
+}
+.menu li:nth-child(4){
+    animation-delay: 1.6s;
+}
+.menu li:nth-child(5){
+    animation-delay: 2s;
+}
+.menu li:nth-child(6){
+    animation-delay: 2.4s;
 }
 .main {
     width: 100%;
-    height: calc(100% - 60px);
+    height: 100%;
     background: url(../img/boy.png) 90% 100%/auto 85% no-repeat , url(../img/bg.jpg) center/cover no-repeat;
 }
 .title__container{
     float: left;
     margin: 366px 0px 0px 114px;
     color: #2c384a;
-    text-align: center
+    text-align: center;
+    -webkit-animation: titlemove 1s ease forwards;
+    -o-animation: titlemove 1s ease forwards;
+    animation: titlemove 1s ease forwards;
+    -webkit-animation-delay: 2.4s;
+    -o-animation-delay: 2.4s;
+    animation-delay: 2.4s;
+    opacity: 0;
 }
 .title__container h1{
     font-size: 62px;
@@ -57,6 +135,45 @@ nav {
     font-size: 13px;
     padding: 0px 16px 0px 16px;
     margin: 63px 14px 0px 14px;
+}
+.title__container input{
+    transition: all 0.2s;
+    transform: scale(1);
+}
+.title__container input:hover{
+    background: #344051;
+    color: white;
+}
+.title__container input:active{
+    transform: scale(1.1);
+}
+@keyframes comming{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@keyframes topshift{
+    from{
+        opacity: 0;
+        margin-top: -80px;
+    }
+    to{
+        opacity: 1;
+        margin-top: 0px;
+    }
+}
+@keyframes titlemove{
+    from{
+        opacity: 0;
+        margin-left: -200px;
+    }
+    to{
+        opacity: 1;
+        margin-left: 114px;
+    }
 }
 .inform{
     width: 100%;
@@ -85,14 +202,22 @@ nav {
 .inform input{
     height: 35px;
     width: 156px;
-    text-align: justify-all;
+    text-align: center;
     border: 2px solid #6f707e;
     background: none;
     border-radius: 5px;
     margin-left: calc(50% - 80px);
     color: #7b7c88;
     background: url(../img/icon.png) 6% 50%/auto no-repeat;
+    transition: all 0.3s;
+    transform: scale(1);
 }
+.inform input:hover{
+    background-color: #6f707e;
+    color: white;
+    transform: scale(1.1);
+}
+
 .works{
     width: 100%;
     height: 525px;
@@ -162,12 +287,20 @@ nav {
     border-radius: 6px;
     background: #63b5ae;
     color: #ffffff;
+    transition: all 0.3s;
+    transform: scale(1);
 }
-
+.cases input:hover{
+    color: #d87135;
+    font-size: 18px;
+}
+.cases input:active{
+    transform: scale(0.9);
+}
 .price{
     width: 100%;
     height: 690px;
-    background: url(../img/greyline.jpg) 50% 77%/auto no-repeat
+    background: url(../img/greyline.jpg) 50% 77%/auto no-repeat , url(../img/white.jpg) center/cover fixed no-repeat;
 }
 .price h2{
     font-size: 30px;
@@ -200,11 +333,12 @@ nav {
     height: 498px;
     background:  
         url(../img/cube.png) 89% 55%/auto no-repeat ,
-        url(../img/gal.png) 63% 55%/auto no-repeat ,       
+        url(../img/gal.png) 63% 55%/auto no-repeat ,   
         url(../img/sign2.png) 38% 55%/auto no-repeat ,
         url(../img/smile.png) 13% 55%/auto no-repeat ,
         url(../img/line.png) 50% 32%/auto no-repeat ,
-        url(../img/statis.jpg) center/cover no-repeat;
+        url(../img/statis.jpg) center/auto fixed no-repeat;
+    
 }
 .statis h2{
     font-size: 30px;
@@ -237,6 +371,11 @@ nav {
         url(../img/misha.png) center/auto no-repeat ,
         url(../img/line.jpg) 50% 26%/auto no-repeat ;
 }
+.misha:hover{
+    background: url(../img/heart.png) 38% 85%/29px 29px no-repeat;
+    z-index: 2;
+    
+}
 .reviews h2{
     font-size: 30px;
     text-align: center;
@@ -253,8 +392,9 @@ nav {
 }
 .misha{
     text-align: center;
-    margin-top: 40px;
+    padding-top: 40px;
     color: #243042;
+    transition: all 0.6s;
 }
 .contacts{
     width: 100%;
@@ -322,14 +462,33 @@ nav {
     font-size: 18px;
     font-weight: 700;
     line-height: 0,1px;
+    transition: all 0.3s;
 }
-
-
-
+.myBtn:hover{
+  -webkit-animation: heartBeat 2s infinite;
+  -o-animation: heartBeat 2s infinite;
+  animation: heartBeat 2s infinite;  
+}
+@keyframes heartBeat{
+animate__heartBeat;
+}
 .Here{
     width: 100%;
     height: 351px;
     background: url(../img/map1.jpg) center/cover no-repeat;
+}
+.its_me{
+    margin-top: 140px;
+    margin-left: 508px;
+    transition: all 2s;
+}
+.its_me:hover{
+    -webkit-animation: flash 2s infinite;
+    -o-animation: ;
+    animation: ;
+}
+@keyframes flash{
+    animate__flash;
 }
 .ending{
     width: 100%;
