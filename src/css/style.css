@@ -570,6 +570,7 @@ nav {
     margin-left: 18.2%;
     font-weight: 700;
     color: #1c2534;
+    transition: all 0.1s;
 }
 
 .price select {
@@ -578,12 +579,14 @@ nav {
     background: #eeeeee;
     text-align: left;
     color: #737373;
+    transition: all 0.1s;
 }
 
 .begin {
     padding: 12px 0px 0px 18.2%;
     font-weight: 800;
     display: block;
+    transition: all 0.1s;
 }
 
 .begin1 {
@@ -591,18 +594,21 @@ nav {
     font-weight: 800;
     display: block;
     margin-top: -20px;
+    transition: all 0.1s;
 }
 
 #I0 {
     display: block;
     margin-left: 762px;
     margin-top: -21px;
+    transition: all 0.1s;
 }
 
 #II0 {
     display: block;
     margin-left: 762px;
     margin-top: -21px;
+    transition: all 0.1s;
 }
 
 .price input {
@@ -612,7 +618,7 @@ nav {
     color: white;
     margin-left: 43%;
     margin-top: 2%;
-    transition: all 0.2s;
+    transition: all 0.1s;
     transform: scale(1);
 }
 
@@ -659,6 +665,20 @@ nav {
         padding: 12px 0px 0px 10.6%;
     }
 }
+@media (max-width: 880px) {
+    .price select {
+        margin: 19px 0px 40px 11.6%;
+        padding: 15px 230px;
+    }
+    #I0 {
+        margin-left: 592px;
+        margin-top: -21px;
+    }
+    #II0 {
+        margin-left: 592px;
+        margin-top: -21px;
+    }
+}
 
 @media (max-width: 767px) {
     .price h3 {
@@ -692,6 +712,21 @@ nav {
         margin-top: -21px;
     }
 }
+@media (max-width: 680px) {
+    .price select {
+        margin: 19px 0px 40px 11.6%;
+        padding: 15px 180px;
+    }
+    #I0 {
+        margin-left: 484px;
+        margin-top: -21px;
+    }
+    #II0 {
+        margin-left: 484px;
+        margin-top: -21px;
+    }
+}
+
 @media (max-width: 575px) {
     .price select {
         margin: 19px 0px 40px 11.6%;
@@ -706,7 +741,7 @@ nav {
         margin-top: -21px;
     }
 }
-@media (max-width: 500px) {
+@media (max-width: 510px) {
     .price select {
         margin: 19px 0px 40px 11.6%;
         padding: 15px 100px;
@@ -725,12 +760,8 @@ nav {
 }
 .statis{
     width: 100%;
-    height: 498px;
+    height: 550px;
     background:  
-        url(../img/cube.png) 89% 55%/auto no-repeat ,
-        url(../img/gal.png) 63% 55%/auto no-repeat ,   
-        url(../img/sign2.png) 38% 55%/auto no-repeat ,
-        url(../img/smile.png) 13% 55%/auto no-repeat ,
         url(../img/line.png) 50% 32%/auto no-repeat ,
         url(../img/statis.jpg) center/auto fixed no-repeat;
     
@@ -746,16 +777,48 @@ nav {
 .statis li{
     float: left;
     text-align: center;
-    margin: 80px 70px 0px 80px;
-    padding-bottom: 20px;
+    margin-left: 9.5%;
+    padding-bottom: 0px;
     font-weight: 600;
     color: #323e4f;
+    transition: all 0.3s;
 }
 .statis h3{
     font-weight: bold;
     font-size: 25px;
     color: #323e4f;
 }
+@media (max-width: 1173px){
+    .statis li{
+        margin-left: 8%;
+    }
+}
+@media (max-width: 1000px){
+    .statis li{
+        margin-left: 7%;
+    }
+}
+@media (max-width: 900px){
+    .statis li{
+        margin-left: 4%;
+    }
+}
+@media (max-width: 800px){
+    .statis li{
+        margin-left: 16%;
+    }
+}
+@media (max-width: 700px){
+    .statis li{
+        margin-left: 12%;
+    }
+}
+@media (max-width: 500px){
+    .statis li{
+        margin-left: 4%;
+    }
+}
+
 .reviews{
     width: 100%;
     height: 598px;
@@ -765,9 +828,10 @@ nav {
         url(../img/dot.png) 52% 90%/auto no-repeat ,
         url(../img/misha.png) center/auto no-repeat ,
         url(../img/line.jpg) 50% 26%/auto no-repeat ;
+    transition: all 0.3s;
 }
 .misha:hover{
-    background: url(../img/heart.png) 38% 85%/29px 29px no-repeat;
+    background: url(../img/heart.png) 35% 85%/29px 29px no-repeat;
     z-index: 2;
     
 }
@@ -782,6 +846,8 @@ nav {
 .comm{
     text-align: center;
     margin-top: 130px;
+    padding-left: 2%;
+    padding-right: 2%;
     line-height: 20px;
     color: #243042;
 }
@@ -790,14 +856,54 @@ nav {
     padding-top: 40px;
     color: #243042;
     transition: all 0.6s;
+    display: block;
 }
+@media (max-width: 930px){
+    .reviews{
+        height: 628px;
+        background: none;
+        background: 
+        url(../img/dot.png) 50% 90%/auto no-repeat ,
+        url(../img/ordot.png) 46% 90%/auto no-repeat ,
+        url(../img/dot.png) 54% 90%/auto no-repeat ,
+        url(../img/misha.png) 50% 46%/auto no-repeat ,
+        url(../img/line.jpg) 50% 25%/auto no-repeat ;
+    }
+    .misha:hover{
+    background: url(../img/heart.png) 30% 85%/29px 29px no-repeat;
+    z-index: 2;
+    
+}
+    
+}
+@media (max-width: 700px){
+    .reviews{
+        height: 668px;
+        background: none;
+        background: 
+        url(../img/dot.png) 50% 90%/auto no-repeat ,
+        url(../img/ordot.png) 46% 90%/auto no-repeat ,
+        url(../img/dot.png) 54% 90%/auto no-repeat ,
+        url(../img/misha.png) 50% 42.5%/auto no-repeat ,
+        url(../img/line.jpg) 50% 23%/auto no-repeat ;
+    }
+    .misha:hover{
+    background: url(../img/heart.png) 21% 100%/29px 29px no-repeat;
+    z-index: 2;
+    
+}
+    }
+@media (max-width: 500px){
+    .misha:hover{
+    background: url(../img/heart.png) 30px 100%/29px 29px no-repeat;
+    z-index: 2;
+    
+}
+    }
 .contacts{
     width: 100%;
-    height: 809px;
-    background:
-        url(../img/geo.png) 21% 35%/auto no-repeat , 
-        url(../img/letter.png) 50% 35%/auto no-repeat , 
-        url(../img/phone.png) 79% 35%/auto no-repeat , 
+    height: 859px;
+    background: 
         url(../img/line.png) 50% 20%/auto no-repeat , 
         url(../img/contact.jpg) center/cover no-repeat;
     color: #fff;
@@ -816,11 +922,12 @@ nav {
 }
 .contacts li{
     float: left;
-    margin-top: 85px;
+    margin-top: 35px;
     text-align: center;
-    padding-left: 200px;
-    padding-right: 10px;
+    padding-left: 15.8%;
+    padding-right: 0px;
     line-height: 20px;
+    transition: all 0.1s;
 }
 .contacts h3{
     margin-top: 170px;
@@ -834,20 +941,22 @@ nav {
     margin-top: 50px;
    padding: 10px 4.5px 10px 0px;
     background: #fff ;
-    margin-right: 35px;
+    margin-right: 2.85%;
     background-color: rgba(216 , 220 , 226 , 0.8);
+    width: 35.8%;
 }
 #you{
-    margin-left: 150px;
+    margin-left: 12.3%;
 }
 .contacts textarea{
-    margin: 10px 0px 0px 150px;
+    margin: 10px 0px 0px 12.3%;
     height: 80px;
     background-color: rgba(216 , 220 , 226 , 0.8);
+    width: 74.8%;
 } 
 .myBtn{
     display: block;
-    margin-left: 545px;
+    margin-left: 44%;
     margin-top: 30px;
     padding: 12px 15px;
     border: 2px solid #fff;
@@ -867,6 +976,33 @@ nav {
 @keyframes heartBeat{
 animate__heartBeat;
 }
+@media (max-width: 991px){
+    .contacts li{
+       padding-left: 12%;
+    }
+}
+@media (max-width: 767px){
+    .contacts li{
+       padding-left: 8%;
+    }
+    .myBtn{
+    margin-left: 39%;
+}
+}
+@media (max-width: 575px){
+    .contacts li{
+       padding-left: 3%;
+    }
+}
+@media (max-width: 500px){
+    .contacts li{
+       padding-left: 0%;
+    }
+    .myBtn{
+    margin-left: 35%;
+}
+}
+
 .Here{
     width: 100%;
     height: 351px;
@@ -874,7 +1010,7 @@ animate__heartBeat;
 }
 .its_me{
     margin-top: 140px;
-    margin-left: 508px;
+    margin-left: 45%;
     transition: all 2s;
 }
 .its_me:hover{
@@ -884,6 +1020,22 @@ animate__heartBeat;
 }
 @keyframes flash{
     animate__flash;
+}
+
+@media (max-width: 767px){
+    .its_me{
+        margin-left: 40%;
+    }
+}
+@media (max-width: 575px){
+    .its_me{
+        margin-left: 40%;
+    }
+}
+@media (max-width: 500px){
+    .its_me{
+        margin-left: 35%;
+    }
 }
 .ending{
     width: 100%;
