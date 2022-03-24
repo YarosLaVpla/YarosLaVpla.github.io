@@ -709,145 +709,93 @@ nav {
         margin-left: 46%;
     }
 }
-
-@media (max-width: 575px) {
-    .price input {
-        margin-left: 37%;
-    }
-
-    /*.price select{
-        padding-left: 21%; 
-    }*/
-}
-
-/*@media (max-width: 1200px) {
-    .price h3 {
-        margin-left: 16.6%;
-    }
-
+@media (max-width: 1450px){
     .price select {
-        margin: 19px 0px 40px 16.6%;
+        width: 62%;
+        margin-left: 19%;
+        /*padding-left: 19%;*/
+    }
+    .price {
+        background: none;
+        background: url(../img/greyline.jpg) 49.6% 74%/62% no-repeat, url(../img/rama.png) center/auto 100% no-repeat, url(../img/white.jpg) center/cover fixed no-repeat;
+    }
+
+    .price h3 {
+        margin-left: 19%;
     }
 
     .begin {
-        padding: 12px 0px 0px 16.6%;
+        padding-left: 19%;
     }
 
     .begin1 {
-        padding: 12px 0px 0px 16.6%;
-    }
-}
-
-@media (max-width: 991px) {
-    .price h3 {
-        margin-left: 10.6%;
+        padding-left: 19%;
     }
 
-    .price select {
-        margin: 19px 0px 40px 10.6%;
-    }
-
-    .begin {
-        padding: 12px 0px 0px 10.6%;
-    }
-
-    .begin1 {
-        padding: 12px 0px 0px 10.6%;
-    }
-}
-@media (max-width: 880px) {
-    .price select {
-        margin: 19px 0px 40px 11.6%;
-        padding: 15px 230px;
-    }
     #I0 {
-        margin-left: 592px;
-        margin-top: -21px;
+        margin-left: 75.5%;
     }
+
     #II0 {
-        margin-left: 592px;
-        margin-top: -21px;
+        margin-left: 75.5%;
+    }
+
+    .price input {
+        margin-left: 42%;
     }
 }
-
-@media (max-width: 767px) {
-    .price h3 {
-        margin-left: 11.6%;
+@media (max-width: 991px){
+    .price select {
+        width: 70%;
+        margin-left: 15%;
+        /*padding-left: 19%;*/
+    }
+    .price {
+        background: none;
+        background: url(../img/greyline.jpg) 49.6% 74%/70% no-repeat, url(../img/rama.png) center/auto 100% no-repeat, url(../img/white.jpg) center/cover fixed no-repeat;
     }
 
-    .price select {
-        margin: 19px 0px 40px 11.6%;
-        padding: 15px 218px;
+    .price h3 {
+        margin-left: 15%;
     }
 
     .begin {
-        padding: 12px 0px 0px 11.6%;
+        padding-left: 15%;
     }
 
     .begin1 {
-        padding: 12px 0px 0px 11.6%;
+        padding-left: 15%;
     }
 
+    #I0 {
+        margin-left: 81%;
+    }
+
+    #II0 {
+        margin-left: 81%;
+    }
+
+    .price input {
+        margin-left: 42%;
+    }
+}
+@media (max-width: 767px){
     .price input {
         margin-left: 39%;
     }
-
-    #I0 {
-        margin-left: 562px;
-        margin-top: -21px;
-    }
-
-    #II0 {
-        margin-left: 562px;
-        margin-top: -21px;
+}
+@media (max-width: 575px){
+    .price input {
+        margin-left: 36%;
     }
 }
-@media (max-width: 680px) {
-    .price select {
-        margin: 19px 0px 40px 11.6%;
-        padding: 15px 180px;
-    }
-    #I0 {
-        margin-left: 484px;
-        margin-top: -21px;
-    }
-    #II0 {
-        margin-left: 484px;
-        margin-top: -21px;
-    }
-}
-
-@media (max-width: 575px) {
-    .price select {
-        margin: 19px 0px 40px 11.6%;
-        padding: 15px 150px;
-    }
-    #I0 {
-        margin-left: 425px;
-        margin-top: -21px;
-    }
-    #II0 {
-        margin-left: 425px;
-        margin-top: -21px;
-    }
-}
-@media (max-width: 510px) {
-    .price select {
-        margin: 19px 0px 40px 11.6%;
-        padding: 15px 100px;
-    }
-    #I0 {
-        margin-left: 325px;
-        margin-top: -21px;
-    }
-    #II0 {
-        margin-left: 325px;
-        margin-top: -21px;
-    }
+@media (max-width: 450px){
     .price input {
         margin-left: 33%;
     }
-}*/
+}
+
+
 .statis {
     width: 100%;
     height: 550px;
@@ -1102,7 +1050,7 @@ nav {
 
 .myBtn {
     display: block;
-    margin-left: 46%;
+    margin-left: 46.7%;
     margin-top: 30px;
     padding: 12px 15px;
     border: 2px solid #fff;
@@ -1123,6 +1071,12 @@ nav {
 
 @keyframes heartBeat {
     animate__heartBeat;
+}
+@media (max-width: 1600px){
+    .myBtn{ margin-left: 45%;}
+}
+@media (max-width: 1100px){
+    .myBtn{ margin-left: 43%;}
 }
 @media (max-width: 991px) {
     #geo{
@@ -1160,6 +1114,7 @@ nav {
 }
 #letter{
     width: 89%;
+    margin-left: 1%;
 }
 #phone{
     width: 40%;
@@ -1169,7 +1124,22 @@ nav {
     margin-left: 38%;
 }
 }
-
+@media (max-width: 530px) {
+    #geo{
+    width: auto;
+    margin-left: -4%;    
+}
+#letter{
+    width: 88%;
+}
+#phone{
+    width: auto;
+    margin-left: 69%;
+}
+    .myBtn {
+    margin-left: 35%;
+}
+}
 /*@media (max-width: 767px) {
     .contacts li {
         width: auto;
